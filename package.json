@@ -1,0 +1,12 @@
+{
+  "name": "food-health-scanner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Food image/text nutrition scanner with web verification, health benefits, pros/cons, and downloadable reports.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

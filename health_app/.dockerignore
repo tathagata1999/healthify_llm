@@ -1,0 +1,9 @@
+.git
+node_modules
+npm-debug.log
+.env
+.env.*
+*.local
+*.log
+chroma_db
+data/memory_records

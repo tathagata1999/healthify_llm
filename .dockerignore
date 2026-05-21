@@ -1,0 +1,10 @@
+.git
+node_modules
+npm-debug.log
+.env
+.env.*
+*.local
+*.log
+__pycache__
+chroma_db
+data/memory_records

@@ -1,0 +1,6 @@
+node_modules/
+.env
+.env.*
+*.log
+chroma_db/
+data/memory_records/

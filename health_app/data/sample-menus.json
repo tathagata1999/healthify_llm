@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-05-21T17:45:00.000Z",
+  "source": "sample-cache",
+  "restaurants": [
+    {
+      "id": "burger-factory-indiranagar",
+      "platform": "swiggy",
+      "name": "Burger Factory",
+      "city": "Bengaluru",
+      "area": "Indiranagar",
+      "cuisine": ["Burgers", "Fast Food"],
+      "rating": 4.3,
+      "deliveryFee": 34,
+      "platformFee": 7,
+      "packagingFee": 12,
+      "tax": 8,
+      "couponDiscount": 20,
+      "membershipDiscount": 0,
+      "etaMinutes": 28,
+      "url": "https://www.swiggy.com/",
+      "lastUpdated": "2026-05-21T17:30:00.000Z",
+      "items": [
+        { "name": "Classic Veg Burger", "canonicalName": "Classic Veg Burger", "category": "Burgers", "veg": true, "price": 129, "originalPrice": 149, "available": true },
+        { "name": "Crispy Chicken Burger", "canonicalName": "Crispy Chicken Burger", "category": "Burgers", "veg": false, "price": 179, "available": true },
+        { "name": "Peri Peri Fries", "canonicalName": "Peri Peri Fries", "category": "Sides", "veg": true, "price": 99, "available": true },
+        { "name": "Chocolate Shake", "canonicalName": "Chocolate Shake", "category": "Beverages", "veg": true, "price": 139, "available": true }
+      ]
+    },
+    {
+      "id": "burger-factory-indiranagar",
+      "platform": "zomato",
+      "name": "Burger Factory",
+      "city": "Bengaluru",
+      "area": "Indiranagar",
+      "cuisine": ["Burgers", "Fast Food"],
+      "rating": 4.1,
+      "deliveryFee": 29,
+      "platformFee": 6,
+      "packagingFee": 10,
+      "tax": 8,
+      "couponDiscount": 30,
+      "membershipDiscount": 0,
+      "etaMinutes": 32,
+      "url": "https://www.zomato.com/",
+      "lastUpdated": "2026-05-21T17:34:00.000Z",
+      "items": [
+        { "name": "Classic Veg Burger", "canonicalName": "Classic Veg Burger", "category": "Burgers", "veg": true, "price": 139, "available": true },
+        { "name": "Crispy Chicken Burger", "canonicalName": "Crispy Chicken Burger", "category": "Burgers", "veg": false, "price": 169, "originalPrice": 189, "available": true },
+        { "name": "Peri Peri Fries", "canonicalName": "Peri Peri Fries", "category": "Sides", "veg": true, "price": 109, "available": true },
+        { "name": "Cold Coffee", "canonicalName": "Cold Coffee", "category": "Beverages", "veg": true, "price": 119, "available": true }
+      ]
+    },
+    {
+      "id": "biryani-house-koramangala",
+      "platform": "swiggy",
+      "name": "Biryani House",
+      "city": "Bengaluru",
+      "area": "Koramangala",
+      "cuisine": ["Biryani", "North Indian"],
+      "rating": 4.4,
+      "deliveryFee": 42,
+      "platformFee": 7,
+      "packagingFee": 18,
+      "tax": 13,
+      "couponDiscount": 40,
+      "membershipDiscount": 15,
+      "etaMinutes": 36,
+      "url": "https://www.swiggy.com/",
+      "lastUpdated": "2026-05-21T17:20:00.000Z",
+      "items": [
+        { "name": "Chicken Dum Biryani", "canonicalName": "Chicken Dum Biryani", "category": "Biryani", "veg": false, "price": 259, "available": true },
+        { "name": "Paneer Biryani", "canonicalName": "Paneer Biryani", "category": "Biryani", "veg": true, "price": 229, "available": true },
+        { "name": "Egg Biryani", "canonicalName": "Egg Biryani", "category": "Biryani", "veg": false, "price": 199, "available": true },
+        { "name": "Gulab Jamun", "canonicalName": "Gulab Jamun", "category": "Dessert", "veg": true, "price": 79, "available": true }
+      ]
+    },
+    {
+      "id": "biryani-house-koramangala",
+      "platform": "zomato",
+      "name": "Biryani House",
+      "city": "Bengaluru",
+      "area": "Koramangala",
+      "cuisine": ["Biryani", "North Indian"],
+      "rating": 4.2,
+      "deliveryFee": 49,
+      "platformFee": 6,
+      "packagingFee": 16,
+      "tax": 12,
+      "couponDiscount": 50,
+      "membershipDiscount": 0,
+      "etaMinutes": 34,
+      "url": "https://www.zomato.com/",
+      "lastUpdated": "2026-05-21T17:28:00.000Z",
+      "items": [
+        { "name": "Chicken Dum Biryani", "canonicalName": "Chicken Dum Biryani", "category": "Biryani", "veg": false, "price": 249, "available": true },
+        { "name": "Paneer Biryani", "canonicalName": "Paneer Biryani", "category": "Biryani", "veg": true, "price": 239, "available": true },
+        { "name": "Chicken 65", "canonicalName": "Chicken 65", "category": "Starters", "veg": false, "price": 199, "available": true },
+        { "name": "Gulab Jamun", "canonicalName": "Gulab Jamun", "category": "Dessert", "veg": true, "price": 69, "available": true }
+      ]
+    },
+    {
+      "id": "chaat-corner-andheri",
+      "platform": "swiggy",
+      "name": "Chaat Corner",
+      "city": "Mumbai",
+      "area": "Andheri West",
+      "cuisine": ["Street Food", "Snacks"],
+      "rating": 4.0,
+      "deliveryFee": 31,
+      "platformFee": 7,
+      "packagingFee": 8,
+      "tax": 5,
+      "couponDiscount": 15,
+      "membershipDiscount": 0,
+      "etaMinutes": 25,
+      "url": "https://www.swiggy.com/",
+      "lastUpdated": "2026-05-21T17:10:00.000Z",
+      "items": [
+        { "name": "Pani Puri", "canonicalName": "Pani Puri", "category": "Street Food", "veg": true, "price": 79, "available": true },
+        { "name": "Sev Puri", "canonicalName": "Sev Puri", "category": "Street Food", "veg": true, "price": 99, "available": true }
+      ]
+    },
+    {
+      "id": "chaat-corner-andheri",
+      "platform": "zomato",
+      "name": "Chaat Corner",
+      "city": "Mumbai",
+      "area": "Andheri West",
+      "cuisine": ["Street Food", "Snacks"],
+      "rating": 4.2,
+      "deliveryFee": 35,
+      "platformFee": 6,
+      "packagingFee": 8,
+      "tax": 5,
+      "couponDiscount": 25,
+      "membershipDiscount": 0,
+      "etaMinutes": 27,
+      "url": "https://www.zomato.com/",
+      "lastUpdated": "2026-05-21T17:15:00.000Z",
+      "items": [
+        { "name": "Pani Puri", "canonicalName": "Pani Puri", "category": "Street Food", "veg": true, "price": 85, "available": true },
+        { "name": "Dahi Puri", "canonicalName": "Dahi Puri", "category": "Street Food", "veg": true, "price": 109, "available": true }
+      ]
+    }
+  ]
+}

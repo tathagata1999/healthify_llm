@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Health Scanner</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Image to nutrition</p>
+        <h1>Food health scanner</h1>
+      </div>
+      <div class="source-pill" id="configPill">Checking setup</div>
+    </header>
+
+    <main class="app-shell">
+      <section class="scanner">
+        <form id="scanForm" class="upload-panel">
+          <div>
+            <p class="eyebrow">Scan</p>
+            <h2>Upload a food photo or search by product name</h2>
+          </div>
+
+          <label class="drop-zone" id="dropZone">
+            <input id="imageInput" type="file" accept="image/*">
+            <span>Choose image</span>
+            <small>JPG, PNG, or camera photo</small>
+          </label>
+
+          <label>
+            <span>Product name or hint</span>
+            <input id="hintInput" type="text" placeholder="Example: Tropicana orange juice, apple, chips">
+          </label>
+
+          <img id="preview" class="preview" alt="Selected food preview" hidden>
+
+          <button id="analyzeButton" type="submit">Analyze nutrition</button>
+          <button id="downloadPdfButton" type="button" class="secondary-button" disabled>Download PDF report</button>
+          <button id="downloadHtmlButton" type="button" class="secondary-button" disabled>Download HTML report</button>
+          <p class="status" id="statusText">Use an image, text, or both. Text-only mode skips vision and searches nutrition directly.</p>
+        </form>
+
+        <section class="pipeline" aria-label="Agent pipeline">
+          <article>
+            <span>1</span>
+            <h3>Vision agent</h3>
+            <p>Reads the photo and extracts product, label text, category, and likely ingredients.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Search agent</h3>
+            <p>Uses Google Serper style search to find nutrition facts and supporting pages.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Verification loop</h3>
+            <p>Checks nutrition evidence and asks search to retry until data is verified.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Nutrition meter agent</h3>
+            <p>Collects nutrition values and converts them into readable health meters.</p>
+          </article>
+          <article>
+            <span>5</span>
+            <h3>Benefit expert agent</h3>
+            <p>Explains likely health benefits with professional nutrition expertise.</p>
+          </article>
+          <article>
+            <span>6</span>
+            <h3>Review agent</h3>
+            <p>Balances pros, cons, and a star rating for the product.</p>
+          </article>
+        </section>
+      </section>
+
+      <section class="results-grid" id="results" hidden>
+        <article class="result-card verdict-card">
+          <p class="eyebrow">Verdict</p>
+          <div class="score-row">
+            <h2 id="verdictText">-</h2>
+            <span id="scoreText">0/100</span>
+          </div>
+          <ul id="reasonsList"></ul>
+          <p id="betterChoice"></p>
+        </article>
+
+        <article class="result-card">
+          <p class="eyebrow">Product</p>
+          <dl id="productDetails"></dl>
+        </article>
+
+        <article class="result-card">
+          <p class="eyebrow">Nutrition</p>
+          <dl id="nutritionDetails"></dl>
+        </article>
+
+        <article class="result-card wide">
+          <p class="eyebrow">Verification loop</p>
+          <div id="verificationStatus" class="verification-status">-</div>
+          <p class="muted" id="verificationFeedback"></p>
+          <div id="verificationAttempts" class="attempts"></div>
+        </article>
+
+        <article class="result-card wide">
+          <p class="eyebrow">Nutrition meters</p>
+          <p class="muted" id="meterSummary"></p>
+          <div class="meters" id="nutritionMeters"></div>
+        </article>
+
+        <article class="result-card">
+          <p class="eyebrow">Health benefits</p>
+          <p class="muted" id="expertBackstory"></p>
+          <ul id="benefitsList"></ul>
+        </article>
+
+        <article class="result-card">
+          <p class="eyebrow">Best for</p>
+          <ul id="bestForList"></ul>
+        </article>
+
+        <article class="result-card">
+          <p class="eyebrow">Pros, cons and stars</p>
+          <div class="stars" id="starsText">-</div>
+          <h3>Pros</h3>
+          <ul id="prosList"></ul>
+          <h3>Cons</h3>
+          <ul id="consList"></ul>
+          <p id="buyingAdvice"></p>
+        </article>
+
+        <article class="result-card wide">
+          <p class="eyebrow">Web evidence</p>
+          <div id="searchResults" class="search-results"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

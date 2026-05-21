@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.*
+*.log
+__pycache__/
+chroma_db/
+data/memory_records/
